@@ -1,0 +1,145 @@
+.section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3vw 0;
+  overflow: hidden;
+}
+
+.section p {
+  text-indent: 20px;
+}
+
+.section__title {
+  font-size: 2.625rem;
+  line-height: calc(1.2 + var(--extra-line-height));
+}
+
+.section__sub-title {
+  margin-top: 6px;
+  font-weight: 600;
+  font-size: 1.125rem;
+}
+
+.section__description {
+  position: relative;
+  line-height: calc(1.8 + var(--extra-line-height));
+}
+
+.section__description::before {
+  display: block;
+  width: 180px;
+  height: 3px;
+  margin: 15px 0 35px;
+  background-color: var(--color-red);
+  content: "";
+}
+
+.section__description p {
+  margin-top: 16px;
+}
+
+.section__description p:first-child {
+  margin-top: 0;
+}
+
+.section__description-part + .section__description-part {
+  margin-top: 20px;
+}
+
+.section__image {
+  flex-shrink: 0;
+  float: left;
+  width: 30%;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.section__image-right {
+  float: right;
+  margin-right: 0;
+  margin-left: 20px;
+}
+
+.section__image img {
+  width: 100%;
+  border-radius: 3px;
+}
+
+.section__description ul {
+  position: relative;
+  left: 20px;
+  margin: 16px 0 20px 20px;
+}
+
+.section__description ul:last-child {
+  margin-bottom: 0;
+}
+
+.section__description li::before {
+  position: relative;
+  top: -2px;
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin-right: 12px;
+  background: #6f6f6f;
+  content: "";
+}
+
+.section__description li {
+  font-size: .875rem;
+}
+
+.section__description li + li {
+  margin-top: 10px;
+}
+
+.section__history .section__image {
+  margin-top: 0;
+}
+
+.section-art .section__image {
+  width: 66%;
+}
+
+.section-music .section__image {
+  width: 46%;
+  margin-top: 0;
+}
+
+.section__theatre .section__image {
+  width: 32%;
+}
+
+.section__film .section__image {
+  width: 48%;
+}
+
+.section__literature .section__image {
+  width: 38%;
+  margin-top: 0;
+  margin-left: 60px;
+}
+
+.section__capital .section__image {
+  width: 50%;
+  margin-right: -20px;
+  margin-bottom: -30px;
+
+}
+
+.section__capital .section__image img {
+  width: 100%;
+  max-width: none;
+}
+
+/* no images */
+
+.no-images .section__description li::before {
+  background-color: currentColor;
+}
+
+.no-images .section__description ul {
+  left: 0;
+  margin-left: 0;
+}

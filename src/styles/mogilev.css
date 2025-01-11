@@ -1,0 +1,242 @@
+body {
+  background-image: url("../images/mogilev-bg.jpg");
+}
+
+.page-footer {
+  margin-top: 5vw;
+}
+
+.page-description {
+  width: 1200px;
+  margin: 5vw auto 0;
+  font-size: 1.125rem;
+  line-height: calc(1.8 + var(--extra-line-height));
+}
+
+.page-description p + p {
+  margin-top: 16px;
+}
+
+.page-description__video {
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 3px;
+  outline: none;
+}
+
+.legend {
+  margin-top: 50px;
+}
+
+.legend-title {
+  margin-bottom: 10px;
+  font-size: 2rem;
+}
+
+.section__inner {
+  width: 1200px;
+  margin: 10vw auto 3vw;
+  padding: 2rem 3rem;
+  background: #f8f8f8;
+  border: 1px solid #dedede;
+  border-radius: 20px;
+}
+
+.section__inner::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+.section__title {
+  margin-bottom: 10px;
+  font-size: 2.625rem;
+}
+
+.section__title::after {
+  display: block;
+  width: 100px;
+  height: 3px;
+  margin: 5px 0 30px 5px;
+  background-color: var(--color-red);
+  content: "";
+}
+
+.section__description {
+  line-height: calc(1.8 + var(--extra-line-height));
+}
+
+.section__description p {
+  margin-bottom: 16px;
+}
+
+.section__description p:last-child {
+  margin-bottom: 0;
+}
+
+.section__description ul {
+  margin: 16px 0 20px 5px;
+}
+
+.section__description ul:last-child {
+  margin-bottom: 0;
+}
+
+.section__description li::before {
+  position: relative;
+  top: -2px;
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin-right: 12px;
+  background: #6f6f6f;
+  content: "";
+}
+
+.section__description li {
+  font-size: .875rem;
+}
+
+.section__description li + li {
+  margin-top: 10px;
+}
+
+.section__image {
+  display: block;
+  float: left;
+  width: 180px;
+  margin-top: -60px;
+  margin-right: 30px;
+  margin-left: -90px;
+}
+
+.attractions {
+  float: right;
+  margin-bottom: 16px;
+  margin-left: 30px;
+  padding: 1.5rem 2rem;
+  background: #f9f9f9;
+  border-radius: 10px;
+}
+
+.attractions__title {
+  font-size: 1.0625rem;
+}
+
+.section-mogilev .section__video {
+  float: left;
+  width: 52%;
+  margin-top: 6px;
+  margin-right: 20px;
+  border-radius: 3px;
+  outline: none;
+}
+
+.section-mogilev .section__title::after {
+  margin-left: 120px;
+}
+
+.swiper {
+  position: relative;
+  --swiper-theme-color: rgb(232 232 232);
+}
+
+.swiper .swiper-container {
+  padding: 50px 0;
+}
+
+.swiper .swiper-slide {
+  width: auto;
+}
+
+.swiper .swiper__image {
+  display: block;
+  width: 800px;
+  height: 500px;
+}
+
+.swiper .swiper__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 3px;
+}
+
+.swiper .swiper-pagination {
+  position: static;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.swiper .swiper-pagination-bullet {
+  width: 15px;
+  height: 15px;
+  margin: 0 6px;
+  background-color: rgb(232 232 232);
+  outline: none;
+  opacity: 1;
+  transition: all .2s;
+}
+
+.swiper .swiper-pagination-bullet-active,
+.swiper .swiper-pagination-bullet:hover {
+  background-color: rgb(48 112 255);
+}
+
+.swiper .swiper-button-prev,
+.swiper .swiper-button-next {
+  outline: none;
+  transition: all .2s;
+}
+
+.swiper .swiper-button-prev:hover,
+.swiper .swiper-button-next:hover {
+  color: white;
+}
+
+/* color themes */
+
+.color-theme-enabled .section__inner {
+  border-color: currentColor;
+}
+
+.color-theme-enabled .section__description li::before {
+  background: currentColor;
+}
+
+.color-theme-enabled .swiper-pagination-clickable .swiper-pagination-bullet {
+  background-color: currentColor;
+  opacity: .5;
+}
+
+.color-theme-enabled .swiper .swiper-pagination-bullet-active,
+.color-theme-enabled .swiper .swiper-pagination-bullet:hover {
+  opacity: 1;
+}
+
+.color-theme-enabled .attractions {
+  background: none;
+  border: 1px solid;
+}
+
+/* no images */
+
+.no-images .section__title::after {
+  margin-left: 5px;
+}
+
+.no-images .section__inner {
+  padding: 0;
+  border: none;
+}
+
+.no-images .attractions {
+  background: none;
+  border: 1px solid;
+}
+
+.no-images .section__description li::before {
+  background: currentColor;
+}
