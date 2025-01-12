@@ -2,7 +2,6 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 3vw 0;
-  overflow: hidden;
 }
 
 .section p {
@@ -52,17 +51,21 @@
   width: 30%;
   margin-top: 20px;
   margin-right: 20px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  border-radius: 3px;
+  box-shadow: 0 0 10px 3px #ccc;
 }
 
-.section__image-right {
+.section__image-map {
   float: right;
-  margin-right: 0;
+  margin-right: 60px;
   margin-left: 20px;
+  box-shadow: 0 0 6px 2px #e5e5e5;
 }
 
 .section__image img {
   width: 100%;
-  border-radius: 3px;
 }
 
 .section__description ul {
