@@ -12,14 +12,14 @@ body {
 
 .page-header__title {
   padding: .5em 1em;
-  font-size: 4.5vw;
-  line-height: calc(1.2 + var(--extra-line-height));
+  font-size: 5.5vw;
   white-space: nowrap;
 }
 
 /* page-description */
 
 .page-description {
+  z-index: 1;
   width: 1200px;
   margin: 5vw auto 0;
   font-size: 1.125rem;
@@ -27,6 +27,7 @@ body {
 }
 
 .page-description p {
+  margin-bottom: 16px;
   text-indent: 20px;
 }
 
@@ -42,10 +43,6 @@ body {
   overflow: hidden;
   border-radius: 3px;
   outline: none;
-}
-
-.page-description p {
-  margin-bottom: 16px;
 }
 
 .page-description p:last-child {
@@ -168,11 +165,6 @@ body {
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 1.125rem;
-}
-
-.page-description {
-  z-index: 1;
-  line-height: calc(2 + var(--extra-line-height));
 }
 
 .section__link {
