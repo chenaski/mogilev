@@ -183,6 +183,24 @@
   transition: transform .2s;
 }
 
+.back-button {
+  display: inline-flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 40px;
+  padding: .75rem 1.75rem;
+  font-size: 1rem;
+  text-decoration: none;
+  background: var(--color-light-gray);
+  border: none;
+  border-radius: 4px;
+  appearance: none;
+}
+
+.back-button img {
+  width: 20px;
+}
+
 /* no images */
 
 .no-images .section__description li::before {
